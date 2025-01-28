@@ -10,29 +10,46 @@
       text-align: center;
       margin: 0;
       padding: 0;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .container {
-      padding: 50px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    h1, h2 {
+      margin-bottom: 10px;
     }
     a {
-      display: block;
+      display: inline-block;
       margin: 10px 0;
       text-decoration: none;
-      color: #007BFF;
+      color: #FFD700;
       font-size: 18px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
     }
     a:hover {
-      text-decoration: underline;
+      background: rgba(255, 255, 255, 0.4);
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>My Links</h1>
-    <h2> Team: Fabio Pecora & Abayomi Shosilva </h2>
+    <h1>CSC 754 Links</h1>
+    <h2>Team: Fabio Pecora & Abayomi Shosilva</h2>
     <p>Welcome! Here are our links:</p>
     <a href="https://example.com/project1" target="_blank">Survey Paper Topic Description</a>
-    
   </div>
 </body>
 </html>
