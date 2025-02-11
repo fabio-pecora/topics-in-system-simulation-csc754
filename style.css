@@ -73,8 +73,6 @@ p {
 .team-images img {
   width: 183px;
   height: 160px;
-  border-radius: 50%;
-  border: 4px solid #00ffff;
   box-shadow: 0 0 10px #00ffff;
   transition: transform 0.3s ease-in-out;
 }
