@@ -53,8 +53,11 @@ h2 {
 
 h3 {
   font-size: 22px;
-  color: #ff00aa;
-  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #ff00ee, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p {
@@ -92,10 +95,13 @@ p {
 }
 
 .project-title {
-  color: #af2c6f;
   font-size: 20px;
-  margin-bottom: 10px;
-  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /* background: linear-gradient(90deg, #52034d, #ff00ff); */
+  background: linear-gradient(90deg, #eb49a57b, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .project-desc {
