@@ -132,13 +132,13 @@ p {
 .comment-section {
   margin-top: 20px;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.1);  /* Light, semi-transparent background */
-  border-left: 4px solid #000000;  /* Bright cyan left border to separate the comments */
+  background: rgba(255, 255, 255, 0.1);  
+  border-left: 4px solid #000000;  
   margin-left: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);  /* Soft glow for emphasis */
-  width: 60%;  /* Smaller width */
-  max-width: 600px;  /* Set a maximum width */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+  width: 100%;  
+  max-width: 600px; 
 }
 
 .comment-title {
