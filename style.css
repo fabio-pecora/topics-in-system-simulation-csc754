@@ -12,7 +12,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  margin: 0;
+  margin-top: 20px;
   padding: 0;
   background: linear-gradient(45deg, #3c3f58, #2c2e43, #0c0d14);
   background-size: 300% 300%;
@@ -22,6 +22,50 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  z-index: 1000;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+.navbar a:hover {
+  background: #555;
+  color: rgb(255, 139, 207)
+}
+
+.dropdown {
+  position: relative;
+  margin-top: 10px;
+  display: inline-block;
+}
+.dropdown-content {
+  margin-top: 10px;
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  display: block;
+  text-align: left;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .container {

@@ -5,9 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSC 754 - Links</title>
   <link rel="stylesheet" href = "style.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".nav-link").forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href").substring(1);
+          document.getElementById(targetId).scrollIntoView({
+            behavior: "smooth"
+          });
+        });
+      });
+    });
+  </script>
 </head>
 <body>
-  <div class="container">
+
+  <div class="navbar">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#project1" class="nav-link">Project 1: Survey Paper</a>
+    <div class="dropdown">
+      <a href="#bibliography" class="nav-link">BIBLIOGRAPHY ▼</a>
+      <div class="dropdown-content">
+        <a href="#foundational" class="nav-link">Foundational Papers</a>
+        <a href="#recent-journals" class="nav-link">Recent Journal Papers</a>
+        <a href="#technical-reports" class="nav-link">Technical Reports</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="home">
     <h1>🚀 CSC 754 - Links</h1>
     <h2>Team: Fabio Pecora & Abayomi Shosilva</h2>
     <div class="team-images">
@@ -16,8 +43,8 @@
     </div>
     <p>Check out our work below:</p>
   </div>
-  <div class="showcase">
-    <div class="project">
+  <div class="showcase" id="project1">
+    <div class="project" >
       <div class="project-title">Project 1: Survey Paper</div>
       <div class="project-desc">
         <b>Agent Modeling and Simulation: </b> 
@@ -27,12 +54,12 @@
       <a href="https://drive.google.com/file/d/1q-sTIF7OtNlALhYY4a7kmrUoG35zC3-e/view?usp=sharing" target="_blank" class="view-btn">View PDF</a>
     </div>
   </div>
-  <div class="showcase">
+  <div class="showcase" id="bibliography">
     <!-- BIBLIOGRAPHY -->
     <h3>BIBLIOGRAPHY</h3>
 
     <!-- Foundational -->
-    <div class="container-divider"> <div class="project-title">Foundational Papers</div> </div>
+    <div class="container-divider" id="foundational"> <div class="project-title">Foundational Papers</div> </div>
     <div class="project-container">
       <div class="project-desc">
         <ol type="1">
@@ -169,7 +196,7 @@
     
 
     <!-- Journals -->
-    <div class="container-divider"> <div class="project-title">Recent Journal Papers</div> </div>
+    <div class="container-divider" id="recent-journals"> <div class="project-title">Recent Journal Papers</div> </div>
     <div class="project-container">
       <div class="project-desc">
         <ol type="1">
@@ -294,7 +321,9 @@
         </ol>
       </div>
     </div>
-    <div class="container-divider"> <div class="project-title">Recent Conference Papers and Technical Reports</div> </div>
+
+    <!-- Technical Reports-->
+    <div class="container-divider" id="technical-reports"> <div class="project-title">Recent Conference Papers and Technical Reports</div> </div>
     <div class="project-container">
       <div class="project-desc">
         <ol type="1">
