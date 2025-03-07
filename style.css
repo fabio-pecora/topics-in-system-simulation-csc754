@@ -231,5 +231,21 @@ p {
   text-decoration: underline;  /* Underline on hover for better visibility */
 }
 
+/* Highlighting selected papers */
+.highlight {
+  background-color: rgba(255, 223, 0, 0.3);
+}
+
+.comment-section-highlight {
+  margin-top: 20px;
+  padding: 10px;
+  background: rgba(156, 160, 74, 0.1);  
+  border-left: 4px solid #89ae01;  
+  margin-left: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(239, 255, 68, 0.4); 
+  width: 100%;  
+  max-width: 600px; 
+}
 
 
