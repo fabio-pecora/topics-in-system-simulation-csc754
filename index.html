@@ -338,7 +338,9 @@
             <a href="https://www.informs-sim.org/wsc09papers/053.pdf" target="_blank" style="color: rgb(239, 166, 237)">INFORMS Simulation Society</a>. </div></li>
             <div class="comment-section-highlight">
               <div class="comment-title">Comment:</div>
-              <div class="comment-content">This paper presents the Golden Region (GR) search, a novel Simulation Optimization (SO) method for continuous problems. </div>
+              <div class="comment-content">This paper introduces the Golden Region (GR) search, a new method for solving simulation optimization problems where the objective function is expensive or difficult to evaluate directly. The method is built on the idea of dividing the feasible region into smaller sub-regions and using a smart strategy to decide which region to search next. In each step, GR considers how much a region has been explored (space score), how good the results in that region have been so far (quality score), and predictions from a trained model (metamodel score). These scores help the algorithm focus its search where the best results are likely to be found, balancing exploration of new areas and refinement of promising ones.
+
+                The paper also explains how the method adapts over time by updating the importance of the three criteria based on their past success. The authors show that the GR method fits within a larger class of algorithms that are proven to converge to the global optimum under certain conditions. They test GR on benchmark problems and compare it to other well-known methods like Genetic Algorithms and Simulated Annealing. The results suggest that GR is efficient and performs well, even without heavy parameter tuning. </div>
             </div>
           
           <br>
